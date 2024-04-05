@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <div class="invoicediv">
+        <p class="invoice-title">Invoice</p>
+        <p id="invoiceNum">Invoice No #</p>
+        <p id="invoiceDa">Invoice Date</p>
+    </div>
+
+    <div class="addressdiv">
+        <div>
+            <p class="bill">Billed by</p>
+            <p id="billedby">
+                <b>JAHANGIR</b> <br/>
+                THEPPAKULAM MAIDAN,<br/>
+                COIMBATORE,
+                Tamil Nadu, India - 641001.<br/>
+                PAN: DONPX6154M<br/>
+                EMAIL: JAHANGIRKHAN1JAN1989@GMAIL.COM<br/>
+                Phone: +91 8122387542<br/>
+            </p>
+        </div>
+        <div>
+            <p class="bill">Billed to</p>
+            <p id="billedto">
+                SREE ABIRAMI HOSPITAL P LTD <br/>
+                SUNDARAPURAM,<br/>
+                COIMBATORE,<br/>
+                Tamil Nadu, India.
+            </p>
+        </div>
+        
+    </div>
+
+                <table id="myTable">
+                    <tr class="tableheader">
+                        <th></th>
+                      <th>Item</th>
+                      <th>Quantity</th>
+                      <th>Rate</th>
+                      <th>Amount</th>
+                    </tr>
+                    
+                  </table>
+
+     <div id="tableend">
+<div class="innertableend1">
+    <p id="total">Total (in words):&nbsp; </p>
+    
+</div>
+<div class="innertableend2">
+    <p id="totalinr">Total (INR):&nbsp; </p>
+</div>
+     </div>             
+
+
+</main>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+<input id="invoiceNumber" type="text" placeholder="Invoice Number"><br/>
+<input id="invoiceDate" type="text" placeholder="Invoice Date"><br/>
+
+<input id="item" type="text" placeholder="item"><br/>
+<input id="quantity" type="text" placeholder="Quantity"><br/>
+<input id="rate" type="text" placeholder="Rate"><br/>
+
+<button id="addRow" onclick="hello()">Add row</button>
+
+
+<button id="printbtn" onclick="printbtn()">Print</button>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
